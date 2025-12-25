@@ -1,6 +1,6 @@
 ## Repository summary
 
-**Help Desk Intake (Help Desk Mini)** is a lightweight, fully client-side help desk ticket tracker that runs entirely in the browser. Tickets are persisted to `localStorage`, so it needs **no backend, database, or deployment beyond static hosting**.0
+**Help Desk Intake** is a lightweight, fully client-side help desk ticket tracker that runs entirely in the browser. Tickets are persisted to `localStorage`, so it needs **no backend, database, or deployment beyond static hosting**.0
 
 ### What it does
 
