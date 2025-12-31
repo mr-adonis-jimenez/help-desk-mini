@@ -28,6 +28,20 @@ The application captures structured support requests, tracks ticket lifecycle st
 - Browser localStorage
 - GitHub Pages compatible
 
+  ## Engineering & Quality Practices
+
+This repository mirrors production-quality frontend workflows, including:
+
+- GitHub Actions CI with explicit least-privilege permissions
+- Automated linting for HTML, CSS, and JavaScript
+- Cross-platform CI test matrix validation
+- Lighthouse performance and accessibility audits
+- Automated accessibility scanning using axe-core
+- Static security analysis with CodeQL
+- Pre-commit hooks enforcing quality before commits
+- Dependabot for automated dependency monitoring
+
+
 - CI Security Checklist
 
 This project follows security best practices for GitHub Actions and CI/CD pipelines.
