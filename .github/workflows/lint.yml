@@ -1,16 +1,16 @@
 name: Lint Checks
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 permissions:
   contents: read
-  push:
-    branches: ["main"]
-  pull_request:
 
 jobs:
   lint:
-  permissions:
-  contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
