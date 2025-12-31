@@ -10,6 +10,7 @@ permissions:
 permissions:
   contents: read
 
+
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
@@ -25,6 +26,5 @@ jobs:
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli
 
-      - name: Run Lighthouse
-        run: |
-          lhci autorun --collect.staticDistDir=.
+      - name: Run Lighthouse with thresholds
+        run: lhci autorun
