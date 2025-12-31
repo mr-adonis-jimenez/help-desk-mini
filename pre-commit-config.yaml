@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+
+  - repo: https://github.com/htmlhint/HTMLHint
+    rev: v1.1.4
+    hooks:
+      - id: htmlhint
+        files: \.html$
+
+  - repo: https://github.com/stylelint/stylelint
+    rev: 15.11.0
+    hooks:
+      - id: stylelint
+        files: \.css$
+
+  - repo: https://github.com/eslint/eslint
+    rev: v8.57.0
+    hooks:
+      - id: eslint
+        files: \.js$
