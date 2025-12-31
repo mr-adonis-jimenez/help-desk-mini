@@ -1,0 +1,31 @@
+name: Lint Checks
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install linters
+        run: |
+          npm install -g htmlhint stylelint eslint
+
+      - name: Lint HTML
+        run: htmlhint index.html
+
+      - name: Lint CSS
+        run: stylelint "**/*.css"
+
+      - name: Lint JavaScript
+        run: eslint "**/*.js" || true
