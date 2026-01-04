@@ -24,5 +24,9 @@ jobs:
           config-file: .github/codeql/codeql-config.yml
 
       - name: Perform CodeQL Analysis
+
+      - name: Claude Code Action Official
+      - uses: anthropics/claude-code-action@v1
         uses: github/codeql-action/analyze@v3
+
 
