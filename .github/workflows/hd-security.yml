@@ -26,6 +26,3 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
-
-- name: Claude Code Action Official
-- uses: anthropics/claude-code-action@v1
